@@ -9,6 +9,7 @@
         href="https://www.pngitem.com/pimgs/m/161-1618980_aditi-name-logo-png-graphic-design-transparent-png.png"
         type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
@@ -22,9 +23,59 @@
       <input type="text" style="width: 100%;"> <button
             style="background-color: rgb(76,207,193); color: white;"><i class="fas fa-search"></i></button>
     </div>
-    <div class="box1">
-      <img src="./Img-CS1/Cart.jpg" alt="S-Cart">
+    <!--Cart-->
+    <button id="cart">
+      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      CART
+    </button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">CART</h5>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">PRODUCT</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img class="cart-item-image" src="https://down-vn.img.susercontent.com/file/0820e4811ddd161f01e5bd0bc08863dd" width="100" height="100" alt="Tees">
+              </div>
+              <span class="cart-price cart-column">300$</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">Delete</button>
+              </div>
+            </div>
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img class="cart-item-image" src="https://bizweb.dktcdn.net/100/369/523/products/dcb73851-e372-42f8-80a8-7d0ab48399cc.jpg?v=1608697658313" width="100" height="100" alt="shoes">
+              </div>
+              <span class="cart-price cart-column">450$</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <span class="cart-total-price">0$</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-footer">Close</button>
+          <button type="button" class="btn btn-primary order">PAY</button>
+        </div>
+      </div>
     </div>
+    <!--Cart-->
   </div>
   <div class="bigbox">
     <div class="header">
@@ -77,7 +128,7 @@
   </div>
   <div class="bigbox3">
     <div class="bigbox31">
-      <img src="https://giayda247.com/product/giay-da-nam-cong-so-bo-that-cao-cap-gd07.jpg" alt="Shoes">
+      <img src="https://www.giaonhan247.com/wp-content/uploads/2020/08/giay-lacoste-2.jpg" alt="Shoes">
       <h2>BRANDED<br>SHOES</h2>
       <div class="bigbox32">
         <h1>SHOP</h1>
@@ -105,71 +156,71 @@
   <div class="bigbox5">
     <div class="bigbox51">
       <div class="bigbox52">
-        <img src="https://i.pinimg.com/originals/f8/55/b5/f855b5c61999e0605745dcb2f42ed2c6.jpg" alt="Tees">
+        <img class="img-prd" src="https://down-vn.img.susercontent.com/file/0820e4811ddd161f01e5bd0bc08863dd" alt="Tees">
 
         <div class="write">
           ADIDAS TEES
         </div>
-        <p>$300</p>
+        <p class="price">300$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart">BUY NOW</a>
 
         </div>
       </div>
       <div class="bigbox52">
-        <img src="https://bizweb.dktcdn.net/100/369/523/products/dcb73851-e372-42f8-80a8-7d0ab48399cc.jpg?v=1608697658313" alt="shoes">
+        <img class="img-prd" src="https://bizweb.dktcdn.net/100/369/523/products/dcb73851-e372-42f8-80a8-7d0ab48399cc.jpg?v=1608697658313" alt="shoes">
         <div class="write">
           NIKE COURT
         </div>
-        <p>$450</p>
+        <p class="price">450$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart">BUY NOW</a>
         </div>
       </div>
       <div class="bigbox52">
-        <img src="https://adamshop.vn/wp-content/uploads/2020/08/tui-%C4%91eo-LV-xanh-den-hoa-tiet-mono.jpg"
+        <img class="img-prd" src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-speedy-bandouli%C3%A8re-20-monogram-empreinte-leather-handbags--M46517_PM2_Front%20view.png?wid=656&hei=656"
              alt="Handbag">
         <div class="write">
           LOUIS VUITTON
         </div>
-        <p>$1000</p>
+        <p class="price">999$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart">BUY NOW</a>
         </div>
       </div>
       <div class="bigbox52">
-        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/333/895/products/11-0edeb39f-bbb3-4d7f-b219-0850092f573c.jpg"
+        <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/333/895/products/11-0edeb39f-bbb3-4d7f-b219-0850092f573c.jpg"
              alt="TS" style="width: 200px; height: 200px;">
         <div class="write">
           NIKE T-SHIRTS
         </div>
-        <p>$750</p>
+        <p class="price">750$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart">BUY NOW</a>
         </div>
       </div>
       <div class="bigbox52">
-        <img src="https://media.gucci.com/style/White_South_0_160_470x470/1576868406/428609_D3VN0_1060_002_100_0000_Light.jpg"
+        <img class="img-prd" src="https://media.gucci.com/style/White_South_0_160_470x470/1576868406/428609_D3VN0_1060_002_100_0000_Light.jpg"
              alt="Balen">
         <div class="write">
           DOUBLE G
         </div>
-        <p>$500</p>
+        <p class="price">500$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart" >BUY NOW</a>
 
         </div>
 
       </div>
       <div class="bigbox52">
-        <img src="https://product.hstatic.net/1000351433/product/1d0c7116-ccfd-4196-93d1-5a9f2f945f81_73db4072a6e9440484c4cf1b69bd63fb_master.jpg"
+        <img class="img-prd" src="https://product.hstatic.net/1000351433/product/1d0c7116-ccfd-4196-93d1-5a9f2f945f81_73db4072a6e9440484c4cf1b69bd63fb_master.jpg"
              alt="Bag" style="width: 200px; height: 200px;">
         <div class="write">
           GUMMY BLACK
         </div>
-        <p>$350</p>
+        <p class="price">350$</p>
         <div class="bigbox53">
-          <a href="#">BUY NOW</a>
+          <a href="#" class="addtoCart">BUY NOW</a>
         </div>
 
       </div>
@@ -188,14 +239,14 @@
         <li> Nguyễn Công Khanh</li>
         <li> 30/07/1995 </li>
         <li> Sở thích: chơi game, xem bóng đá</li>
-        <li> Email: khanhnc45@wru.vn </li>
+        <li> Email: khanhcnsh02@gmail.com </li>
         <li> Sđt: 0978941770 </li>
       </ul>
     </div>
     <div class="ftcolumn">
       <ul>
         <h3> Sản phẩm đã làm </h3>
-        <li><a href="https://congkhanh30.github.io/JavaWeb04/Day4/techmaster.html" target="_blank">Trang chủ Techmaster</a></li>
+        <li><a href="https://github.com/CongKhanh30/GitProject/blob/main/source/GamePuzzle/GameP.htm" target="_blank">Game Puzzle</a></li>
         <li><a href="https://congkhanh30.github.io/JavaWeb04/Day5/baitap5venha.html" target="_blank">Menu Lazada</a></li>
         <li><a href="https://congkhanh30.github.io/JavaWeb04/Day6/Bai6.html" target="_blank">Big Six EPL</a></li>
         <li><a href="https://congkhanh30.github.io/JavaWeb04/Day6/FB.html" target="_blank">Facebook</a></li>
@@ -214,5 +265,5 @@
 
 
 </body>
-
+<script src="Cs1Js.js"></script>
 </html>

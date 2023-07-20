@@ -28,8 +28,216 @@
     width: 20%;
     height: 50px;
     float: left;
+
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4.8px;
+    outline: 0;
+
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-footer {
+    display: flex;
+    border-top: 1px solid #aaaaaa;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid #aaaaaa;
+}
+
+.modal-footer>:not(:first-child) {
+    margin-left: 4px;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-secondary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+
+.modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 16px;
+}
+
+h5.modal-title {
+    font-size: 24px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cart {
+    font-size: 15px;
+    color: #fff;
+    background: rgb(76,207,193);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 16px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#cart:hover {
+    border-color: #fff;
+}
+/* cart */
+.cart-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 24px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 19.2px;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+
+
+.cart-item-image {
+    width: 75px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: 4.8px;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 19.2px;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 17.6px;
+}
 
 .box .boxse{
     width: 60%;
@@ -40,13 +248,13 @@
     align-items: center;
     position: relative;
     top: 15px;
+    right: 20px;
     margin-bottom: 0px;
 }
 .box img{
     width: 60%;
     margin-right: 300px;
     position: relative;
-
     left: 20%;
 }
 .boxse img{
@@ -243,7 +451,6 @@ a{
     height:30px;
     border-radius: 5px;
     background-color: rgb(61,196,182);
-
     position: relative;
     left: 80px;
     bottom: 0px;
@@ -268,23 +475,18 @@ a{
     width: 100%;
     background-color:rgb(61,196,182);
     display: flex;
-
-
 }
 .ftcolumn{
     flex-basis: 25%;
-
     color: white;
     margin: 20px;
     position: relative;
     left: 100px;
-
 }
 .ftcolumn a{
     color: white;
     font-size: 20px;
     padding: 0px;
-
 }
 .ftcolumn h3{
     color: white;
@@ -294,15 +496,12 @@ a{
 .ftcolumn ul{
     display: flex;
     flex-direction: column;
-
 }
 .ftcolumn li{
     list-style-type: none;
     margin: 0;
     line-height: 2;
     font-size: 20px;
-
-
 }
 .ftcolumn img{
     border-radius: 50%;
