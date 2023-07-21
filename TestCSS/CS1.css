@@ -1,30 +1,35 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-size: 12px;
 }
-.container{
+
+.container {
     width: 1200px;
     height: auto;
     margin: 10px auto;
 }
-.container::after{
-    clear:both;
+
+.container::after {
+    clear: both;
     display: table;
     content: "";
 }
-.box::after{
-    clear:both;
+
+.box::after {
+    clear: both;
     display: table;
     content: "";
 }
-.box{
+
+.box {
     width: 1000px;
     height: auto;
     margin: 0px auto;
 }
-.box1{
+
+.box1 {
     width: 20%;
     height: 50px;
     float: left;
@@ -72,7 +77,7 @@
     border-top: 1px solid #aaaaaa;
 }
 
-.modal-footer>:not(:first-child) {
+.modal-footer > :not(:first-child) {
     margin-left: 4px;
 }
 
@@ -134,7 +139,7 @@ h5.modal-title {
 #cart {
     font-size: 15px;
     color: #fff;
-    background: rgb(76,207,193);
+    background: rgb(76, 207, 193);
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
@@ -146,6 +151,7 @@ h5.modal-title {
 #cart:hover {
     border-color: #fff;
 }
+
 /* cart */
 .cart-header {
     font-weight: bold;
@@ -179,7 +185,6 @@ h5.modal-title {
 .cart-quantity {
     width: 35%;
 }
-
 
 
 .cart-item-image {
@@ -239,7 +244,7 @@ h5.modal-title {
     font-size: 17.6px;
 }
 
-.box .boxse{
+.box .boxse {
     width: 60%;
     height: 20px;
     border: 1px solid silver;
@@ -251,34 +256,40 @@ h5.modal-title {
     right: 20px;
     margin-bottom: 0px;
 }
-.box img{
+
+.box img {
     width: 60%;
     margin-right: 300px;
     position: relative;
     left: 20%;
 }
-.boxse img{
+
+.boxse img {
     position: relative;
     left: 96%;
     width: 3%;
 }
-.bigbox{
+
+.bigbox {
     width: 1200px;
     height: auto;
-    background-color: rgb(76,207,193);
+    background-color: rgb(76, 207, 193);
 }
-.bigbox::after{
-    clear:both;
+
+.bigbox::after {
+    clear: both;
     display: table;
     content: "";
 }
-.header{
+
+.header {
     width: 1050px;
     height: 25px;
     margin-left: 80px;
 
 }
-.menu li{
+
+.menu li {
     font-family: arial;
     list-style-type: none;
     font-weight: bold;
@@ -287,7 +298,8 @@ h5.modal-title {
     border-right: 1px solid white;
     height: 15px;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
     padding-right: 22px;
@@ -295,24 +307,26 @@ a{
     text-align: center;
 }
 
-.bigbox2{
+.bigbox2 {
     width: 1200px;
     height: 400px;
-    background-color: rgb(61,196,182);
-}
-.bigbox21{
-    width: 600px;
-    height: 300px;
-    margin:40px auto;
-    position: relative;
-    top:70px;
+    background-color: rgb(61, 196, 182);
 }
 
-.bigbox21 img{
+.bigbox21 {
+    width: 600px;
+    height: 300px;
+    margin: 40px auto;
+    position: relative;
+    top: 70px;
+}
+
+.bigbox21 img {
     position: relative;
     right: 30px;
 }
-.shopnow{
+
+.shopnow {
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -323,7 +337,8 @@ a{
     padding-left: 3px;
 
 }
-.shopnow a{
+
+.shopnow a {
     padding-left: 7px;
     padding-right: 0px;
     color: white;
@@ -331,25 +346,30 @@ a{
     font-family: arial;
     font-weight: 700;
 }
-.bigbox21 img{
+
+.bigbox21 img {
     float: left;
 }
-.bigbox21 h5{
+
+.bigbox21 h5 {
     color: white;
     font-size: 35px;
     font-family: arial;
 }
-.bigbox3::after{
-    clear:both;
+
+.bigbox3::after {
+    clear: both;
     display: table;
     content: "";
 }
-.bigbox3{
+
+.bigbox3 {
     width: 1200px;
     height: auto;
     border-right: 2px solid silver;
 }
-.bigbox31{
+
+.bigbox31 {
     width: 33%;
     height: 150px;
     float: left;
@@ -358,56 +378,63 @@ a{
 
     border-left: 2px solid silver;
 }
-.bigbox31 img{
+
+.bigbox31 img {
 
     float: left;
     height: 130px;
 }
-.bigbox31 h2{
+
+.bigbox31 h2 {
     font-size: 20px;
     color: gray;
     position: relative;
-    top:15%;
+    top: 15%;
 }
-.bigbox32{
+
+.bigbox32 {
     color: white;
     float: left;
     width: 50px;
-    height:30px;
+    height: 30px;
     border-radius: 5px;
-    background-color: rgb(61,196,182);
+    background-color: rgb(61, 196, 182);
     padding-top: 8px;
     padding-left: 8px;
     margin-top: 40px;
 }
-.bigbox4::after{
-    clear:both;
+
+.bigbox4::after {
+    clear: both;
     display: table;
     content: "";
 }
-.bigbox4{
+
+.bigbox4 {
     width: 1200px;
     height: 50px;
     font-size: 20px;
     color: white;
-    background-color: rgb(61,196,182);
+    background-color: rgb(61, 196, 182);
     padding-left: 100px;
     padding-top: 10px;
 }
 
-.bigbox51::after{
-    clear:both;
+.bigbox51::after {
+    clear: both;
     display: table;
     content: "";
 }
-.bigbox5{
+
+.bigbox5 {
     width: 1200px;
     height: auto;
-    border:3px solid rgb(61,196,182);
+    border: 3px solid rgb(61, 196, 182);
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.bigbox51{
+
+.bigbox51 {
     width: 850px;
     height: 700px;
     margin: auto;
@@ -415,49 +442,53 @@ a{
 
 }
 
-.bigbox52{
+.bigbox52 {
     width: 30%;
     height: 300px;
-    border:1px solid silver;
+    border: 1px solid silver;
     float: left;
     margin-right: 12px;
     margin-left: 12px;
     margin-top: 20px;
     font-size: 20px;
     color: gray;
-    border-bottom: 5px solid rgb(61,196,182);
+    border-bottom: 5px solid rgb(61, 196, 182);
 }
-.bigbox52 img{
+
+.bigbox52 img {
     width: 80%;
     position: relative;
     top: 5px;
     left: 25px;
 }
-.bigbox52 .write{
+
+.bigbox52 .write {
     font-size: 20px;
     position: relative;
     left: 60px;
 }
-.bigbox52 p{
+
+.bigbox52 p {
     font-size: 20px;
     position: relative;
     left: 100px;
     bottom: 0px;
 }
-.bigbox53{
-    color:#FFFFFF;
+
+.bigbox53 {
+    color: #FFFFFF;
     float: left;
     width: 80px;
-    height:30px;
+    height: 30px;
     border-radius: 5px;
-    background-color: rgb(61,196,182);
+    background-color: rgb(61, 196, 182);
     position: relative;
     left: 80px;
     bottom: 0px;
 
 }
 
-.bigbox53 a{
+.bigbox53 a {
     padding-top: 8px;
     padding-right: 0px;
     padding-left: 0;
@@ -466,58 +497,68 @@ a{
 
 }
 
-.bigbox54{
-    border:1px solid black;
+.bigbox54 {
+    border: 1px solid black;
     position: relative;
-    top:35px;
+    top: 35px;
 }
-.footer{
+
+.footer {
     width: 100%;
-    background-color:rgb(61,196,182);
+    background-color: rgb(61, 196, 182);
     display: flex;
 }
-.ftcolumn{
+
+.ftcolumn {
     flex-basis: 25%;
     color: white;
     margin: 20px;
     position: relative;
     left: 100px;
 }
-.ftcolumn a{
+
+.ftcolumn a {
     color: white;
     font-size: 20px;
     padding: 0px;
 }
-.ftcolumn h3{
+
+.ftcolumn h3 {
     color: white;
     margin-bottom: 10px;
     font-size: 25px;
 }
-.ftcolumn ul{
+
+.ftcolumn ul {
     display: flex;
     flex-direction: column;
 }
-.ftcolumn li{
+
+.ftcolumn li {
     list-style-type: none;
     margin: 0;
     line-height: 2;
     font-size: 20px;
 }
-.ftcolumn img{
+
+.ftcolumn img {
     border-radius: 50%;
     position: relative;
     left: 75px;
     width: 75%;
 }
-.last{
+
+.last {
     display: flex;
     width: 60%;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.1);
     transition: all 0.5s;
 }
-a:hover{
+
+a:hover {
     color: tomato;
 }

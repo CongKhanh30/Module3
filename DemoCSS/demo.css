@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+.div1 {
+    margin: 20px 15px;
+    border: 30px solid limegreen;
+    padding: 30px 20px;
+    color: green;
+    width: 15%;
+    text-align: center;
+}
+h1{
+    background-color: lightgray;
+}

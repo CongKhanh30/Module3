@@ -1,0 +1,35 @@
+@media only screen and (max-width: 724px) {
+    .box{
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .left{
+        display: none;
+    }
+    .content {
+        width: calc(100% - 20% - 6px - 9px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .mid {
+        width: calc(100% - 6px - 9px);
+    }
+    .table4, .table5{
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .table6 {
+        float: none;
+        width: 100%;
+    }
+}
